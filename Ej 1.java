@@ -3,8 +3,7 @@ import java.util.Scanner;
 public class Ej1 {
     public static void main(String[] args) {
       Scanner entrada=new Scanner(System.in);
-      int x;
-      int y;
+      int x; int y; int z;
       System.out.println("ingrese el largo y ancho del terreno");
       x=entrada.nextInt();
       y=entrada.nextInt();

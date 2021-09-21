@@ -1,0 +1,21 @@
+package paquete1;
+
+public class ejercicio1 {
+//programa que calcula el promedio de un vector
+	
+	public static void main(String[] args) {
+	int[] vect = {10,20,30,40,50,60};
+	double suma =0;
+	double promediofinal =0;
+	
+	for(int i=0; i<vect.length; i++) {
+		suma = suma + vect[i];
+		System.out.println("En este momento la suma es de:"+suma);
+		}
+	promediofinal = suma/vect.length;
+	System.out.println("El promedio final es:"+ promediofinal);
+	
+
+	}
+
+}

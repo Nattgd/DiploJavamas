@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Ej3 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in); 
+		System.out.println("Ingrese el largo y ancho de la pared");
+		double x= sc.nextDouble();
+		double y= sc.nextDouble();
+		double sup=x*y;
+		double pint=(sup*0.5)/(3.6);
+        System.out.println("Se necesitan "+pint+"litros de pintura");		
+		
+	}
+}

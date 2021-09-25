@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Ej11 {
+
+	public static void main(String[] args) {
+     Scanner var = new Scanner(System.in);
+     double desc=0;
+     double neto=0;     
+     
+     System.out.println("Ingrese sueldo basico y categoria");
+     double basico = var.nextDouble();
+     int categoria = var.nextInt();
+     
+     if(categoria ==1) {
+    	 desc = 0.3*basico;
+    	 neto = basico - desc;
+    	 System.out.println("El sueldo neto es de: "+neto);
+    	 return;
+     }
+     else if (categoria ==2 || categoria ==3) {
+    	 desc = 0.25*basico;
+    	 neto = basico - desc;
+    	 System.out.println("El sueldo neto es de: "+neto);
+    	 return;
+     }
+     else if (categoria ==4) {
+    	 desc = 0.1*basico;
+    	 neto = basico - desc;
+    	 System.out.println("El sueldo neto es de: "+neto);
+    	 return;
+     }
+     else if (categoria > 4) {
+    	 neto = basico;
+    	 System.out.println("El sueldo neto es de: "+neto);
+    	 return;
+     }
+	}
+
+}

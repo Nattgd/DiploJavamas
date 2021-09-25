@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Ej7 {
+
+	public static void main(String[] args) {
+     Scanner var = new Scanner(System.in);
+     System.out.println("ingrese el numero a evaluar");
+     int a = var.nextInt();
+     if ( a % 2 ==0)
+     {System.out.println("El número es par");}
+     else System.out.println("El número no es par");
+ 
+	}
+  
+}

@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Ej6 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+    double part = 0;
+    double cantvendida = 0;
+    double impventa = 0;
+    double imptotal = 0;
+    
+    for (int i=0; i<5; i++) {
+    	System.out.println("ingrese precio del articulo");
+    	part = sc.nextDouble();
+    	System.out.println("ingrese cantidad vendida");
+    	cantvendida = sc.nextDouble();
+    	
+    	impventa = part * cantvendida;
+    	System.out.println("Importe de venta del articulo: "+impventa);
+    	imptotal = imptotal + impventa;
+    	}
+        System.out.println("El importe de venta total es de: "+imptotal);
+	}
+
+}
